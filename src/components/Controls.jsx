@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { INCREMENT, DECREMENT, RESET,INCREMENT_BY_VALUE } from "../store/types";
+import { INCREMENT, DECREMENT, RESET } from "../store/types";
 
 class Controls extends Component {
-  // dispatch is one of the many ways that you can subscribe to the store
-
-
   add = () => {
-    this.props.dispatch({ type: INCREMENT});
+    this.props.dispatch({ type: INCREMENT, payload: 10 });
   };
 
   minus = () => {

@@ -16,6 +16,7 @@ export function reducer(state = initialState, action) {
     }
 
     case DECREMENT: {
+      // presents the decrement from going below 0
       if (state.count === 0) return;
       const copy = { ...state };
       copy.count -= 1;
@@ -29,10 +30,7 @@ export function reducer(state = initialState, action) {
     }
 
     default:
+      console.log("Reducer started or invalid reducer type");
       return initialState;
   }
 }
-
-// reducer function creates the logic that manipulates the state- takes 2 things and gives one or more things back.
-// in this case, the reducer function takes the state and the action
-// The reducer tales the state and an action

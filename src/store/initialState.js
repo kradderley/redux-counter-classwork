@@ -1,3 +1,3 @@
-export const initialState = { count: 0, name: "Khes' Counter"}
+// create initial State
 
-// create initial state - anything that you want to predefine needs to go in the initial state
+export const initialState = { count: 0, name: "Khes" };
